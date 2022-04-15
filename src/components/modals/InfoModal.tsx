@@ -10,7 +10,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="How to play" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        Guess the <b>banking related</b> word in 6 tries. After each guess, the
+        Guess the <b>transportation/bussing</b> related word in 6 tries. After each guess, the
         color of the tiles will change to show how close your guess was to the
         word.
       </p>
@@ -19,40 +19,40 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="P"
+          value="D"
           status="correct"
         />
+        <Cell value="R" />
+        <Cell value="I" />
+        <Cell value="V" />
         <Cell value="E" />
-        <Cell value="N" />
-        <Cell value="N" />
-        <Cell value="Y" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter P is in the word and in the correct spot.
+        The letter D is in the word and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="C" />
-        <Cell value="A" />
+        <Cell value="B" />
+        <Cell value="R" />
         <Cell
           isRevealing={true}
           isCompleted={true}
-          value="R"
+          value="A"
           status="present"
         />
-        <Cell value="D" />
-        <Cell value="S" />
+        <Cell value="K" />
+        <Cell value="E" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
-        The letter R is in the word but in the wrong spot.
+        The letter A is in the word but in the wrong spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="A" />
-        <Cell value="S" />
-        <Cell value="S" />
-        <Cell isRevealing={true} isCompleted={true} value="E" status="absent" />
+        <Cell value="R" />
+        <Cell value="O" />
+        <Cell value="U" />
         <Cell value="T" />
+        <Cell isRevealing={true} isCompleted={true} value="E" status="absent" />
       </div>
       <p className="text-sm text-gray-500 dark:text-gray-300">
         The letter E is not in the word in any spot.
@@ -62,11 +62,14 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
         This is an open source version of the word guessing game we all know and
         love -{' '}
         <a
-          href="https://github.com/Zfauser/Bankle"
+          href="https://github.com/Zfauser/roxle"
           className="underline font-bold"
         >
           check out the code here
         </a>{' '}
+        <br></br>
+        <br></br>
+        Made By: <b><a href="https://zachfauser.com/">Zach Fauser</a></b>
       </p>
     </BaseModal>
   )
