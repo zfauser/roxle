@@ -1,5 +1,7 @@
 # Bankle
 
+<!-- Test -->
+
 This is a clone project of the popular word guessing game we all know and love with banking/finace terms. Made using React, Typescript, and Tailwind.
 
 [**Try it out!**](https://bankle.vercel.app/)
